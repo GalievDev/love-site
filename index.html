@@ -1,41 +1,41 @@
-    <!DOCTYPE html>
-    <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=2">
-        <title> Lover Site </title>
-        <link rel="stylesheet" href="css/style.css">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    </head>
-    <body>
-    <main>
-        <div class="words">
-            <h1 id="words">I just wanna tell you... </h1>
-        </div>
-        <div class="audio">
-            <audio id="audio" controls>
-                <source src="assets/lys.mp3">
-                This browser doesn't support HTML5
-            </audio>
-        </div>
-        <div class="image">
-            <img src="assets/void.png" width="147" height="143" id="cat" alt="cat"/>
-        </div>
-        <script type="text/javascript">
-            (function () {
-                let audio = document.getElementById('audio')
-                let words = ["I love you so 💖", "I love you so 💗", "I love you soo "], i = 0;
-                setInterval(function () {
-                    if (!audio.paused) {
-                        document.getElementById('cat').src = "https://i.ibb.co/J72Sbd5/cat.png"
-                        $('#words').fadeOut(function () {
-                            $(this).html(words[(i = (i + 1) % words.length)]).fadeIn();
-                        });
-                    }
-                }, 5600)
-            })();
-        </script>
-    </main>
-    <script src="js/script.js"></script>
-    </body>
-    </html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=2">
+    <title> Lover Site </title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+<main>
+    <div class="words">
+        <h1 id="words">I just wanna tell you... </h1>
+    </div>
+    <div class="audio">
+        <audio id="audio" controls>
+            <source src="assets/lys.mp3">
+            This browser doesn't support HTML5
+        </audio>
+    </div>
+    <div class="image">
+        <img src="assets/void.png" width="147" height="143" id="cat" alt="cat"/>
+    </div>
+    <script type="text/javascript">
+        (function () {
+            let audio = document.getElementById('audio')
+            let words = ["I love you so 💖", "I love you so 💗", "I love you soo "], i = 0;
+            setInterval(function () {
+                if (!audio.paused) {
+                    document.getElementById('cat').src = "https://i.ibb.co/J72Sbd5/cat.png"
+                    $('#words').fadeOut(function () {
+                        $(this).html(words[(i = (i + 1) % words.length)]).fadeIn();
+                    });
+                }
+            }, 5600)
+        })();
+    </script>
+</main>
+<script src="js/script.js"></script>
+</body>
+</html>
