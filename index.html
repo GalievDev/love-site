@@ -27,7 +27,7 @@
             let words = ["I love you so 💗💖", "I love you so 💗", "I love you soo "], i = 0;
             setInterval(function () {
                 if (!audio.paused) {
-                    document.getElementById('cat').src = "/cat.png"
+                    document.getElementById('cat').src = "assets/cat.png"
                     $('#words').fadeOut(function () {
                         $(this).html(words[(i = (i + 1) % words.length)]).fadeIn();
                     });
